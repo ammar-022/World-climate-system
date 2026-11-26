@@ -1,0 +1,15 @@
+{
+  "best_model": "Logistic Regression",
+  "test_accuracy": 0.7737819025522041,
+  "test_macro_precision": 0.7601770420325047,
+  "test_macro_recall": 0.7549194638266185,
+  "test_macro_f1": 0.7545361752842838,
+  "test_weighted_f1": 0.7697815797893094,
+  "cv_macro_f1": 0.7616888970787098,
+  "best_params": {
+    "Multinomial Naive Bayes": "{'clf__alpha': 0.03}",
+    "Logistic Regression": "{'clf__C': 5}",
+    "Support Vector Classifier (SVC)": "{'clf__estimator__C': 1.0}"
+  },
+  "proba_argmax_agrees_with_predict": 1.0
+}

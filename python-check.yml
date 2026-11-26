@@ -1,0 +1,20 @@
+name: python-check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Saved model loads and predicts six categories
+        run: |
+          python - <<'PY'
+          import joblib
+          m = joblib.load("models/best_model.joblib")
+          p = m.predict_proba(["scientists measured ozone hole recovery over antarctica"])[0]
+          assert len(p) == 6 and abs(p.sum() - 1) < 1e-6
+          print(list(m.classes_))
+          PY

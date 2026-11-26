@@ -1,0 +1,20 @@
+{
+  "original_records": 11539,
+  "original_categories": 20,
+  "number_of_selected_categories": 6,
+  "selected_records": 4309,
+  "empty_texts_removed": 0,
+  "duplicates_removed": 2,
+  "records_used": 4307,
+  "training_records": 3445,
+  "testing_records": 862,
+  "category_counts": {
+    "Climate": 699,
+    "Pollution": 945,
+    "Environment": 478,
+    "Weather": 719,
+    "Ozone Holes": 622,
+    "Agriculture & Food": 844
+  },
+  "sklearn_version": "1.9.1"
+}

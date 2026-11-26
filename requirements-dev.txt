@@ -1,0 +1,7 @@
+# Extra packages for re-running the notebook / train.py
+-r requirements.txt
+seaborn==0.13.2
+wordcloud>=1.9
+jupyter
+notebook
+ipykernel
